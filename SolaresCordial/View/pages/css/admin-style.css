@@ -1,0 +1,703 @@
+/**
+Fonte Padrão
+**/
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+/**
+Padrão
+**/
+
+:root {
+    --primary: #c34800;
+    --secundary: #02007a;
+    --third: #ff3c00;
+    --four: #1200b8;
+    --light: #ffffff;
+    --dark: #000000;
+    --dark1: #130031;
+    --dark-2: rgba(0,0,0,0.8);
+    --dark-3: rgba(0,0,0,0.4);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+html, body {
+    height: 100%;
+}
+
+
+/*
+Personalização da barra de scroll
+ */
+
+ body {
+    background-color: var(--dark1);
+ }
+
+::-webkit-scrollbar {
+    width: 8px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--four);
+}
+
+.bg-overlay {
+    background-color: rgba(0, 0, 0, 0.3);
+}
+
+.left {
+    background-image: url("https://sunwise.com.br/wp-content/uploads/2021/05/176-1762399_solar-panels-wallpaper-hd-1600x800.jpeg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--light) !important;
+    box-shadow: 5px 0 15px rgba(0, 0, 0, 0.4);
+    position: relative;
+    z-index: 1;
+}
+
+.right {
+    position: relative;
+    z-index: 0;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRqBlPLQET-Z9nsz4A_viJzXk39yN05L8QfBA&usqp=CAU");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    color: var(--light) !important;
+}
+
+.title {
+    font-size: 25px;
+    font-weight: 600;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    color: var(--light);
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.6);
+    margin-bottom: 30px;
+}
+
+.title b {
+    color: var(--four);
+    text-shadow: #000000;
+}
+
+.icon {
+    font-size: 200px;
+}
+
+.btn {
+    font-size: 18px;
+    border-radius: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-primary {
+    background-color: #0061a7;
+}
+
+.btn-primary:hover {
+    background-color: var(--third);
+}
+
+.btn-sucess {
+    color: var(--light);
+    background-image: linear-gradient(#0021b6,#0056f5);
+}
+
+.btn-alert {
+    color: var(--light);
+    background-image: linear-gradient(#b50000, #ff3636);
+}
+
+.btn-close {
+    text-align: right !important;
+    width: 100%;
+}
+
+.btn-close img {
+    opacity: 1 !important;
+    width: 20px !important;
+    cursor: pointer;
+}
+
+.btn-medium {
+    padding: 10px 15px;
+    font-size: 13px;
+}
+
+.btn-large {
+    padding: 10px 30px;
+}
+
+.right img {
+    width: 100%;
+    max-width: 300px;
+}
+
+.subtitle {
+    color: var(--dark);
+    font-size: 25px;
+    text-shadow: 5px 5px 10px rgba(0, 0, 0, 0.7);
+    font-weight: 800;
+    letter-spacing: 1px;
+}
+
+
+.form {
+    max-width: 500px;
+    padding: 0 50px;
+}
+
+.form .btn {
+    margin: 10px 0;
+}
+
+.input {
+    margin: 10px 0;
+    padding: 10px;
+    border: none;
+    outline: none;
+    background-color: rgba(0, 0, 0, 0.6);
+    box-shadow: 3px 3px 10px rgba(0, 0, 0, 0.5);
+    border-radius: 8px;
+    color: var(--light);
+    font-size: 18px;
+    text-align: center;
+}
+
+
+.estoque .right {
+    padding: 15px;
+}
+
+.bem-vindo {
+    color: var(--primary);
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.logout {
+    color: var(--dark);
+    font-size: 15px;
+}
+
+.controle-estoque {
+    padding: 50px 0;
+}
+
+.estoque .title {
+    font-size: 25px;
+}
+
+.table-container {
+    background-color: var(--light);
+    overflow-y: auto;
+}
+
+.table {
+    overflow-y: auto;
+}
+
+.table .btn {
+    font-size: 15px;
+}
+
+.tr-hover:hover {
+    background-color: #00338b;
+}
+
+.btn-new {
+    font-size: 18px;
+    font-weight: 600;
+}
+
+/*
+Dashboard
+*/
+
+.topbar {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-image: url("https://wallpapercave.com/wp/wp6939500.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 60px;
+    z-index: 99999;
+    padding: 0 20px;
+}
+
+.dash-title {
+    color: var(--light);
+    font-size: 15px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    margin: 0 10px;
+}
+
+.top-info {
+    text-align: right;
+}
+
+.avatar img {
+    max-width: 100%;
+    width: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.top-info {
+    color: var(--light);
+    font-size: 20px;
+}
+
+.sidebar {
+    position: fixed;
+    top: 60px;
+    left: 0;
+    width: 80px;
+    background-image: url("https://media.istockphoto.com/photos/dark-blue-de-focused-blurred-motion-abstract-background-picture-id1216628493?k=20&m=1216628493&s=612x612&w=0&h=PGifdN4ADl0gs6KuDFMbh7R4BgoxtJh-5ZVYXvgfHXw=");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100vh;
+    z-index: 88888;
+    overflow-y: auto;
+    transition: all 500ms ease-in;
+}
+
+.sidebar.active {
+    width: 280px;
+
+}
+
+.nav-toggle {
+    text-align: center !important;
+    height: 50px;
+    transition: all 1s ease-in;
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    width: 80px !important;
+    cursor: pointer;
+    opacity: 0.4;
+}
+
+.nav-toggle span {
+    width: 100%;
+}
+
+.nav-toggle.active {
+    text-align: right !important;
+    padding: 0 10px;
+}
+
+.nav-item:nth-child(2) {
+    margin-top: 50px;
+}
+
+.nav-item {
+    height: 50px;
+    display: flex;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+}
+
+.nav-link {
+    text-decoration: none;
+    color: var(--light);
+    align-items: center;
+    align-content: center;
+    display: flex;
+    width: 100%;
+    height: 50px;
+    font-size: 13px;
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.last-item {
+    position: absolute;
+    bottom: 80px;
+    left: 0;
+}
+
+.up-last {
+    position: absolute;
+    bottom: 120px;
+    left: 0;
+}
+
+.nav-icon {
+    font-size: 16px;
+}
+
+.nav-icon {
+    width: 80px;
+    opacity: 0.4;
+    text-align: center;
+    transition: all 500ms ease-in;
+    position: absolute;
+    left: 0;
+}
+
+.nav-title {
+    display: none;
+    margin-left: 80px;
+}
+
+.nav-dropdown {
+    width: 100%;
+    text-align: right;
+    transform: all 500ms ease-in;
+    display: none;
+    padding: 0 10px;
+}
+.content {
+    position: absolute;
+    top: 60px;
+    left: 80px;
+    width: calc(100% - 80px);
+    height: 100%;
+    padding: 50px 2%;
+}
+
+/*
+Content
+*/
+
+.bg-dark {
+    background-color: var(--dark);
+}
+
+.content-card {
+    padding: 20px;
+    background-color: var(--dark);
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    color: var(--light) !important;
+    margin-bottom: 20px;
+}
+
+.content-card .text-right {
+    margin-top: 30px;
+}
+
+.content-card h1 {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    align-content: center;
+    color: var(--light) !important;
+    font-size: 18px;
+    font-weight: 500;
+}
+
+.content-card img {
+    width: 35px;
+    margin: 0 20px;
+    opacity: 0.3;
+}
+
+.content-card b {
+    font-size: 13px;
+    font-weight: 400;
+    font-style: italic;
+    opacity: 0.6;
+    margin-top: 10px;
+}
+
+.card1, .card2, .card3, .card4 {
+    padding: 20px;
+    margin: 10px 0;
+    flex-direction: column;
+}
+
+.card-dark {
+    background-color: var(--dark);
+    padding: 20px;
+    margin: 10px 0;
+}
+
+.card1 {
+    background-image: linear-gradient(#005669,#007a969b,#0084a1);
+}
+
+.card2 {
+    background-image: linear-gradient(#37325d,#4a4863,#666666);
+}
+
+.card3 {
+    background-image: linear-gradient(#00d377,#009756,#00864c);
+}
+
+.card4 {
+    background-image: linear-gradient(#ff4970,#da002f,#7a001b);
+}
+
+.card {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    align-content: center;
+    color: var(--light) !important;
+}
+
+.card h1 {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+.card h2 {
+    font-weight: 400;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.btn {
+    text-decoration: none;
+}
+
+.btn-transparent {
+    color: #20cbff;
+    transition: 250ms;
+}
+
+.btn-transparent:hover {
+    color: #ffffff;
+}
+
+.btn-small {
+    font-size: 13px;
+    padding: 5px 10px;
+}
+
+.text-right {
+    text-align: right;
+}
+
+.text-sucess {
+    color: #00c72b;
+}
+
+.card-icon {
+    text-align: center;
+    width: 60px;
+    height: 60px;
+}
+
+.card-icon img {
+    width: 40px;
+    opacity: 0.4;
+}
+
+.card-icon2 {
+    width: 50px;
+    height: 50px;
+    background-color: black;
+    border-radius: 50%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    align-content: center;
+    flex-wrap: wrap;
+}
+
+.card-icon2 span {
+    width: 100%;
+    text-align: center;
+}
+
+.card-icon2 img {
+    width: 30px;
+}
+
+.titulo {
+    font-size: 15px;
+    text-transform: uppercase;
+    margin-bottom: 10px;
+    color: var(--light);
+}
+
+.card-info {
+    font-size: 45px !important;
+    font-weight: 400 !important;
+}
+
+.text-center {
+    text-align: center;
+}
+
+.grafico {
+    background-color: var(--dark);
+}
+
+.table-container {
+    width: 100%;
+    overflow-y: auto;
+    margin-top: 40px;
+}
+
+.table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.table th {
+    text-align: left;
+    text-transform: uppercase;
+    font-size: 13px;
+    font-weight: 600;
+    padding: 10px;
+}
+
+.table td {
+    padding: 10px;
+}
+
+.table-options {
+}
+
+.btn-table img {
+    width: 25px;
+    opacity: 1;
+}
+
+.btn-table {
+    padding: 6px;
+    border-radius: 3px;
+    text-decoration: none;
+    color: var(--light);
+    margin: 0 5px;
+    text-align: center;
+    outline: none;
+    border: none;
+    cursor: pointer;
+}
+
+.btn-edit {
+    background-image: linear-gradient(#af4d00, #ff6f00);
+    text-align: center !important;
+}
+
+.btn-delete {
+    background-image: linear-gradient(#9d0000, #ff0000);
+    text-align: center !important;
+}
+
+.form-modal-container {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    display: none;
+    align-items: center;
+    align-content: center;
+    z-index: 99999;
+    padding: 0 2%;
+}
+
+.form-modal {
+    padding: 20px;
+    width: 100%;
+    max-width: 500px;
+    transform: translate(-50%);
+    -ms-transform: translate(-50%);
+    display: flex;
+    top: 60px;
+    margin-top: -100%;
+    margin-left: 50%;
+    z-index: 999999;
+    background-color: var(--dark);
+    transition: 500ms;
+    opacity: 0;
+    flex-wrap: wrap;;
+    position: absolute;
+}
+
+.form-modal h1 {
+    text-transform: uppercase !important;
+    font-size: 15px;
+    font-weight: 600;
+    margin-bottom: 30px;
+}
+
+.form-modal p {
+    margin: 0 20px;
+    width: 100%;
+}
+
+.form {
+    width: 100%;
+    display: flex;
+    padding: 0 20px;
+    flex-wrap: wrap;
+    position: relative;
+    z-index: 99999;
+}
+
+.form-input {
+    width: 100%;
+    margin: 10px 0;
+    padding: 10px;
+    background-color: var(--dark-2);
+    border: none;
+    outline: 0.1rem solid rgba(255,255,255,0.3);
+    border-radius: 4px;
+    color: var(--light);
+    transition: all 500ms ease;
+    position: relative;
+    z-index: 99999;
+}
+
+.form-input:focus {
+    outline: 0.1rem solid #006fb5;
+    box-shadow: 0 0 5px 3px #006fb5;
+}
+
+.mensagem-sucesso {
+    background-image: linear-gradient(#006d0b, #00ba07);
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 6px;
+}
+
+.mensagem-erro {
+    background-image: linear-gradient(#af0000, #ff0000);
+    padding: 5px;
+    margin-top: 20px;
+    border-radius: 6px;
+    display: flex;
+    flex-wrap: nowrap;
+    width: 100%;
+}
+
+.form label {
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px 0;
+}
