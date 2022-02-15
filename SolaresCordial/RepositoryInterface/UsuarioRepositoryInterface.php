@@ -8,9 +8,9 @@ interface UsuarioRepositoryInterface
 {
     public static function save(Usuario $usuario);
 
-    public static function update(Usuario $usuario, $id);
+    public static function update($usuario, $id);
 
-    public static function delete($usuario);
+    public static function deleteById($id);
 
     public static function findAll();
 

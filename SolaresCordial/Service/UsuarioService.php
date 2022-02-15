@@ -16,9 +16,9 @@ class UsuarioService
         \SolaresCordial\Repository\UsuarioUsuarioRepository::authentication($usuario);
     }
 
-    public static function atualizar(Usuario $usuario, $id)
+    public static function update($usuario,$id)
     {
-        \SolaresCordial\Repository\UsuarioUsuarioRepository::update($usuario, $id);
+        \SolaresCordial\Repository\UsuarioUsuarioRepository::update($usuario,$id);
     }
 
     public static function findAll()
@@ -26,9 +26,9 @@ class UsuarioService
         return \SolaresCordial\Repository\UsuarioUsuarioRepository::findAll();
     }
 
-    public static function delete($usuario)
+    public static function deleteById($id)
     {
-        \SolaresCordial\Repository\UsuarioUsuarioRepository::delete($usuario);
+        \SolaresCordial\Repository\UsuarioUsuarioRepository::deleteById($id);
     }
 
     public static function findById($id)

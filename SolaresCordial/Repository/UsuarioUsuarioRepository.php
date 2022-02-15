@@ -14,16 +14,16 @@ class UsuarioUsuarioRepository implements UsuarioRepositoryInterface
         $query->execute(array($usuario->getNome(), $usuario->getEmail(), $usuario->getSenha()));
     }
 
-    public static function update(Usuario $usuario, $id)
+    public static function update($usuario, $id)
     {
         $query = \SolaresCordial\DAO\DAO::conectar()->prepare("UPDATE usuarios SET nome = ?, email = ?, senha = ? WHERE id = ?");
-        $query->execute(array($usuario->getNome(),$usuario->getEmail(),$usuario->getSenha(),$usuario));
+        $query->execute(array($usuario->getNome(),$usuario->getEmail(),$usuario->getSenha(),$id));
     }
 
-    public static function delete($usuario)
+    public static function deleteById($id)
     {
         $query = \SolaresCordial\DAO\DAO::conectar()->prepare("DELETE usuarios FROM usuarios WHERE id = ?");
-        $query->execute(array($usuario));
+        $query->execute(array($id));
     }
 
     public static function findAll()
@@ -37,10 +37,10 @@ class UsuarioUsuarioRepository implements UsuarioRepositoryInterface
 
     public static function findById($id)
     {
-        $query = \SolaresCordial\DAO\DAO::conectar()->prepare("SELECT id FROM usuarios WHERE id = ?");
+        $query = \SolaresCordial\DAO\DAO::conectar()->prepare("SELECT * FROM usuarios WHERE id = ?");
         $query->execute(array($id));
         $result = $query->fetch();
-        $usuario = $result['id'];
+        $usuario = $result;
 
         return $usuario;
     }
