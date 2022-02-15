@@ -15,7 +15,6 @@
                         <input class="input w-100" type="password" name="senha" placeholder="Sua senha...">
                         <input class="btn btn-primary btn-large w-100" type="submit" name="logar" value="Entrar!">
                     </form>
-                    <?php \DAO\UsuarioDAO::autenticarUsuario(); ?>
                 </div>
             </div>
         </div>

@@ -1,3 +1,6 @@
+<?php
+\SolaresCordial\Utils\Utils::logout();
+?>
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>

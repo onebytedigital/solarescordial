@@ -10,5 +10,13 @@ class AdminController
         } else {
             \SolaresCordial\View\MainView::render('login');
         }
+
+        if (isset($_POST['logar'])) {
+            $usuario = new \SolaresCordial\Model\Usuario();
+            $usuario->setEmail($_POST['email']);
+            $usuario->setSenha($_POST['senha']);
+
+            \SolaresCordial\Service\UsuarioService::authentication($usuario);
+        }
     }
 }

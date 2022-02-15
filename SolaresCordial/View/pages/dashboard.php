@@ -109,7 +109,3 @@ include("menu-admin.php");
     </div><!--cards-->
 </section><!--content-->
 
-<script>
-    graficoFaturamento()
-</script>
-

@@ -2,6 +2,8 @@
 
 namespace SolaresCordial\Controller;
 
+use SolaresCordial\Model\Usuario;
+
 class HomeController
 {
     public function index()

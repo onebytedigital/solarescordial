@@ -1,4 +1,6 @@
-<?php include("menu-admin.php"); ?>
+<?php
+$usuarios = \SolaresCordial\Service\UsuarioService::findAll();
+?>
 <section class="content">
     <div class="content-card">
         <div class="container">
@@ -60,11 +62,6 @@
             </div><!--row-->
             <div class="row">
                 <div class="col-12">
-                    <?php
-                        \DAO\UsuarioDAO::cadastrarUsuario();
-                        \DAO\UsuarioDAO::deletarUsuario();
-                        \DAO\UsuarioDAO::atualizarUsuario();
-                    ?>
                     <div class="table-container bg-dark">
                         <table class="table bg-dark">
                             <thead>
@@ -77,7 +74,6 @@
                             </thead>
                             <tbody id="rowsCount">
                                 <?php
-                                    $usuarios = \DAO\UsuarioDAO::listarUsuarios();
                                     foreach ($usuarios as $usuario) {
                                 ?>
                                 <tr class="tr-hover">

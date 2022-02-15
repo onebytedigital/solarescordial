@@ -2,7 +2,7 @@
 
 session_start();
 
-define('INCLUDE_PATH','http://localhost/solarescordial/SolaresCordial/');
+define('INCLUDE_PATH','http://localhost/solarescordial/');
 define('INCLUDE_PATH_FULL','http://localhost/solarescordial/SolaresCordial/View/pages/');
 
 //dados para banco de dados

@@ -35,10 +35,6 @@ html, body {
 Personalização da barra de scroll
  */
 
-body {
-    background-color: var(--dark1);
-}
-
 ::-webkit-scrollbar {
     width: 8px;
     height: 10px;
@@ -75,8 +71,4 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     color: var(--light) !important;
-}
-
-body, html {
-    background-color: purple !important;
 }
