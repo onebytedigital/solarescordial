@@ -1,6 +1,3 @@
-<?php
-include("menu-admin.php");
-?>
 <section class="content">
     <div class="content-card">
         <div class="container">
@@ -13,7 +10,7 @@ include("menu-admin.php");
                 </div>
                 <div class="col-12 col-md-4">
                     <p class="text-right">
-                        <a href="#" class="btn btn-medium btn-sucess">
+                        <a href="<?php echo INCLUDE_PATH ?>propostas?nova-proposta" class="btn btn-medium btn-sucess">
                             <i class="fa fa-plus"></i> Nova Proposta
                         </a>
                     </p>

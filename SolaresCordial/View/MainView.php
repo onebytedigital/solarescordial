@@ -8,6 +8,7 @@ class MainView
     {
         if (isset($_SESSION['usuarioLogado'])) {
             include ('pages/partials/header-admin.php');
+            include ('pages/partials/menu-admin.php');
             include ('pages/'.$filenma.'.php');
             include ('pages/partials/footer.php');
         } else {
